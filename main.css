@@ -1,0 +1,293 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+strong,
+ul,
+li,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  color: rgb(255, 255, 255);
+  font-family: 'Forum', cursive;
+  font-size: 17px !important;
+  background: url(./assets/bg3.jpg);
+  background-size: 120%;
+  
+}
+
+div#wrapper {
+  width: 970px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+
+header {
+  height: 200px;
+  width: 970px;
+  border-bottom: solid 1px rgb(255, 255, 255);
+}
+
+h2 span {
+  float: right;
+  margin: 100px 0 0 0;
+  font-size: 30px;
+  font-family: 'Prata', serif;
+  color: white;
+}
+
+h1 {
+  float: left;
+  font-family: 'Prata', serif;
+  margin: 70px 0 0 0;
+  font-size: 5.1em;
+  color: white;
+}
+
+section {
+  width: 970px;
+  padding: 20px 0 30px 0;
+  margin: 30px 0 10px 0;
+  border-bottom: solid 1px rgb(255, 255, 255);
+  float: left;
+  /* background: #fffbee; */
+}
+section p {
+  float: left;
+  line-height: 1.6;
+  padding: 10px 30px 10px 30px;
+}
+
+section div {
+  float: left;
+  line-height: 1.6;
+  padding: 20px 40px 40px 40px;
+}
+
+.subheading1 {
+  font-size: 20px;
+  font-family: 'Prata', serif;
+  color: #005aae;
+}
+
+section h3 {
+  float: left;
+  font-family: 'Prata', serif;
+  font-size: 2.5em;
+  width: 100%;
+  position: relative;
+
+  margin: 15px 0 15px 0;
+}
+
+strong {
+    font-size: 23px;
+    color: rgb(253, 197, 220);
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding-left: 30px;
+}
+
+.cake {
+    position: absolute;
+    left: 3%;
+    top: 35%;
+width: 15%;
+display: none;
+}
+
+.cake.show {
+display: flex;
+}
+
+.icecream {
+    position: absolute;
+    left: 3%;
+    top: 100%;
+width: 14%;
+display: none;
+}
+
+.icecream.show {
+display: flex;
+}
+
+.pie {
+    position: absolute;
+    left: 2%;
+    top: 190%;
+width: 17%;
+display: none;
+}
+
+.pie.show {
+display: flex;
+}
+
+.cupcake {
+    position: absolute;
+    left: 2%;
+    top: 265%;
+width: 15%;
+display: none;
+}
+
+.cupcake.show {
+display: flex;
+}
+
+
+.title h1 {
+  float: left;
+  font-family: 'Prata', serif;
+  margin: 70px 0 0 0;
+  color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+}
+
+h1 span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    -webkit-animation: bounce .6s ease infinite alternate;
+            animation: bounce .6s ease infinite alternate;
+    font-size: 80px;
+    line-height:110px;
+    color: #FFF;
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 4px 4px rgba(0, 0, 0, .4);
+  }
+   
+  h1 span:nth-child(2) { -webkit-animation-delay: .1s; animation-delay: .1s; }
+  h1 span:nth-child(3) { -webkit-animation-delay: .2s; animation-delay: .2s; }
+  h1 span:nth-child(4) { -webkit-animation-delay: .3s; animation-delay: .3s; }
+  h1 span:nth-child(5) { -webkit-animation-delay: .4s; animation-delay: .4s; }
+  h1 span:nth-child(6) { -webkit-animation-delay: .5s; animation-delay: .5s; }
+  h1 span:nth-child(7) { -webkit-animation-delay: .6s; animation-delay: .6s; }
+   
+
+  @-webkit-keyframes bounce {
+    100% {
+      top: -20px;
+      text-shadow: 0 1px 0 #CCC,
+                   0 2px 0 #CCC,
+                   0 3px 0 #CCC,
+                   0 4px 0 #CCC,
+                   0 5px 0 #CCC,
+                   0 6px 0 #CCC,
+                   0 7px 0 #CCC,
+                   0 8px 0 #CCC,
+                   0 25px 12px rgba(0, 0, 0, .2);
+    }
+  }
+   
+  @keyframes bounce {
+    100% {
+      top: -20px;
+      text-shadow: 0 1px 0 #CCC,
+                   0 2px 0 #CCC,
+                   0 3px 0 #CCC,
+                   0 4px 0 #CCC,
+                   0 5px 0 #CCC,
+                   0 6px 0 #CCC,
+                   0 7px 0 #CCC,
+                   0 8px 0 #CCC,
+
+                   0 25px 12px rgba(0, 0, 0, .2);
+    }
+  }
+  
+  /* mobile */
+@media only screen and (max-width: 50rem) {
+    div#wrapper {
+        width: 360px;
+        margin: 0 auto;
+        padding: 0 5px;
+        /* border: 3px solid black; */
+      }
+      header {
+        height: 200px;
+        width: 360px;
+        border-bottom: solid 1px rgb(255, 255, 255);
+      }
+      section {
+        width: 360px;
+        padding: 10px 0 20px 0;
+        margin: 20px 0 0px 0;
+      }
+      section p {
+       font-size: 8px;
+       padding: 0px 10px 0px 20px;
+      }
+    h1 {
+        padding-left: 3rem;
+        font-size: 1em;
+      }  
+      h1 span {
+        top: 3px;
+        font-size: 40px;
+}
+h2 span {
+    padding-right: 3rem;
+    font-size: 12px;
+  }
+  section h3 {
+    font-size: 1em;
+    margin: 15px 0 15px 10px;
+  }
+  ul {
+    font-size: 8px;
+}
+.cake {
+    left: 3%;
+    top: 36%;
+width: 13%;
+}
+
+.icecream {
+    left: 3%;
+    top: 80%;
+width: 12%;
+}
+
+.pie {
+    left: 1.5%;
+    top: 135%;
+width: 15%;
+}
+
+.cupcake {
+    left: 2%;
+    top: 180%;
+width: 13%;
+}
+
+}
